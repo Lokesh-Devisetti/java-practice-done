@@ -1,20 +1,23 @@
-import java.util.Scanner;
-public class Even
-{
-    public static void main(String args[])
-    {
-        int num;
-        Scanner sc=new Scanner(System.in);
-        System.out.println("enter number");
-        num=sc.nextInt();
-        if(num%2==0)
-        {
-            System.out.println("given number is even");
+public class Even{
+    public static void main(String args[]) {
+    
+    int sum=0, even=0, odd=0;
+        int arr[ ]={4,5,7,3,5,8};
+        for(int i=0;i<arr.length;i++){
+            if (i % 2 == 0)
+                even += arr[i];
+            else
+                odd += arr[i];
+           
+            
         }
-        else
-        {
-            System.out.println("given number is odd");
-        }
-        
+        System.out.println("sum of even array is:" +even);
+        System.out.println("sum of even array is:" +odd);
+
+
     }
 }
+       
+
+
+
